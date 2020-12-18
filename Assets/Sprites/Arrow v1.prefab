@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 973894075356610681}
   - component: {fileID: 1925347276184388723}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 4816360099040971906}
   - component: {fileID: 6888972265643638711}
   - component: {fileID: 8898929833257660237}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Arrow v1
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -238,6 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae86442774788c46979886f885cf8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialBulletDamage: 35
   hitEffect: {fileID: 8508283145727729641, guid: 33e84e2ea2ecbb5459ad9c4bcee13a51, type: 3}
   bulletPrefab: {fileID: 6572506888486725071}
   rb: {fileID: 4816360099040971906}

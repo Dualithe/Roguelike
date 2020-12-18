@@ -15,11 +15,11 @@ D:/Github/Roguelike
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50905
+51148
 Successfully changed project path to: D:/Github/Roguelike
 D:/Github/Roguelike
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 48.54 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 32.00 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.0b6 (24a0f8b56f72)
 [Subsystems] Discovering subsystems at path D:/Unity Editors/2020.2.0b6/Editor/Data/Resources/UnitySubsystems
@@ -35,279 +35,58 @@ Initialize mono
 Mono path[0] = 'D:/Unity Editors/2020.2.0b6/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity Editors/2020.2.0b6/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity Editors/2020.2.0b6/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56528
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56708
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity Editors/2020.2.0b6/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001144 seconds.
+Registered in 0.000801 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 47.40 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 29.68 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.185 seconds
+- Completed reload, in  0.772 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000911 seconds.
+Registered in 0.000603 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Github\Roguelike\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 48.25 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 31.87 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.118 seconds
+- Completed reload, in  0.716 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1782 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 106.2 MB.
 System memory in use after: 106.3 MB.
 
 Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2256.
-Total: 2.663800 ms (FindLiveObjects: 0.404400 ms CreateObjectMapping: 0.087200 ms MarkObjects: 2.143100 ms  DeleteObjects: 0.027800 ms)
+Total: 1.966200 ms (FindLiveObjects: 0.320400 ms CreateObjectMapping: 0.080200 ms MarkObjects: 1.543000 ms  DeleteObjects: 0.022000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Sprites/charBackLeft.png
-  artifactKey: Guid(e87dd73e772ccb040bb5383d3704aa1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/charBackLeft.png using Guid(e87dd73e772ccb040bb5383d3704aa1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1571a354e60db61c314aebd01657bb2') in 0.194592 seconds
-  Import took 0.198826 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000401 seconds.
-  path: Assets/Sprites/charFrontRight.png
-  artifactKey: Guid(24a808352bb1d9a4c9739a9819534806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/charFrontRight.png using Guid(24a808352bb1d9a4c9739a9819534806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c66ca0b94f176b3a87c1ecfbfd136c') in 0.019579 seconds
-  Import took 0.023436 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/Sprites/Aimwheel v2.png
-  artifactKey: Guid(3e6da806418becd4e946c69c16dc5d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Aimwheel v2.png using Guid(3e6da806418becd4e946c69c16dc5d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8208e072a9edfe203f043c15b1341e9') in 0.030251 seconds
-  Import took 0.034107 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/Sprites/Arrow v3.png
-  artifactKey: Guid(2fc3fc13def688d4b895aa43a3e9abbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Arrow v3.png using Guid(2fc3fc13def688d4b895aa43a3e9abbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a618ad32635794cd566954402742e46e') in 0.030621 seconds
-  Import took 0.034620 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/Sprites/charFrontLeftSkeleton.png
-  artifactKey: Guid(aba784e456044534fb24bf5c020f1e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/charFrontLeftSkeleton.png using Guid(aba784e456044534fb24bf5c020f1e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '883fde2721ad2960bf7fc78e469add2d') in 0.017867 seconds
-  Import took 0.022033 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000328 seconds.
   path: Assets/Sprites/charBackLeftSkeleton.png
   artifactKey: Guid(8674a3b096b412a448229885e0d9d868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/charBackLeftSkeleton.png using Guid(8674a3b096b412a448229885e0d9d868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38926b77097a381cfaa13034c8ade75e') in 0.018058 seconds
-  Import took 0.022316 seconds .
+Start importing Assets/Sprites/charBackLeftSkeleton.png using Guid(8674a3b096b412a448229885e0d9d868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53130ac005956dabace8391801c551ee') in 0.051838 seconds
+  Import took 0.054699 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Sprites/charFrontLeft.png
-  artifactKey: Guid(a14b9582706c16942a9a155ab9e62f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/charFrontLeft.png using Guid(a14b9582706c16942a9a155ab9e62f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00ed7b5f1a2a493f4cdb11749d232df') in 0.017073 seconds
-  Import took 0.021066 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000308 seconds.
-  path: Assets/Sprites/charBackRight.png
-  artifactKey: Guid(aae1c9fffae508a48947f57040645b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/charBackRight.png using Guid(aae1c9fffae508a48947f57040645b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb28c7d713a4bf7428788b8d9d784e8') in 0.017994 seconds
-  Import took 0.021903 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/Sprites/charBackRightSkeleton.png
-  artifactKey: Guid(00a06e7304ea3ce459583599f45dfa4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/charBackRightSkeleton.png using Guid(00a06e7304ea3ce459583599f45dfa4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '887ac9c404cd7aca5d39b668b0cbc023') in 0.017809 seconds
-  Import took 0.021870 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000302 seconds.
-  path: Assets/Sprites/charFrontRightSkeleton.png
-  artifactKey: Guid(a32eb13d2d0ba3849b9af2f74ac290c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/charFrontRightSkeleton.png using Guid(a32eb13d2d0ba3849b9af2f74ac290c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56f08159537f9f8463bf52aeffbb18db') in 0.017453 seconds
-  Import took 0.021402 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/Sprites/Arrow v2.png
-  artifactKey: Guid(a0cbaff7d731e64448958c97909379d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Arrow v2.png using Guid(a0cbaff7d731e64448958c97909379d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93771c79557b183f10a9055f857afa15') in 0.017868 seconds
-  Import took 0.021809 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000890 seconds.
-  path: Assets/Sprites/Arrow v2.png
-  artifactKey: Guid(a0cbaff7d731e64448958c97909379d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Arrow v2.png using Guid(a0cbaff7d731e64448958c97909379d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93771c79557b183f10a9055f857afa15') in 0.008349 seconds
-  Import took 0.012515 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 89.389515 seconds.
-  path: Assets/Sprites/Arrow v3.prefab
-  artifactKey: Guid(43cda6c0b9962de498fac57d3b6a6421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Arrow v3.prefab using Guid(43cda6c0b9962de498fac57d3b6a6421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c53d289b8fc45862abe2851009fbdc0') in 0.049112 seconds
-  Import took 0.053817 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.177134 seconds.
-  path: Assets/Sprites/Arrow v2.prefab
-  artifactKey: Guid(700982e6a7824b64c9b9496e29f53dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Arrow v2.prefab using Guid(700982e6a7824b64c9b9496e29f53dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f23c8a36f2639be23555422bd65058') in 0.018066 seconds
-  Import took 0.022362 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005785 seconds.
-  path: Assets/Sprites/Arrow v2.prefab
-  artifactKey: Guid(700982e6a7824b64c9b9496e29f53dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Arrow v2.prefab using Guid(700982e6a7824b64c9b9496e29f53dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f23c8a36f2639be23555422bd65058') in 0.009847 seconds
-  Import took 0.014290 seconds .
-
-========================================================================
-Received Prepare
-Reloading mono domain
-Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: D:/Unity Editors/2020.2.0b6/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001072 seconds.
-Symbol file LoadedFromMemory doesn't match image D:\Github\Roguelike\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 45.89 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.069 seconds
-Platform modules already initialized, skipping
-Registering precompiled user dll's ...
-Registered in 0.000890 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Github\Roguelike\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.043 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 74.4 MB.
-System memory in use after: 74.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2271.
-Total: 2.576700 ms (FindLiveObjects: 0.484900 ms CreateObjectMapping: 0.129900 ms MarkObjects: 1.942000 ms  DeleteObjects: 0.018700 ms)
-
-========================================================================
-Received Prepare
-Reloading mono domain
-Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: D:/Unity Editors/2020.2.0b6/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001091 seconds.
-Symbol file LoadedFromMemory doesn't match image D:\Github\Roguelike\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 46.61 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.091 seconds
-Platform modules already initialized, skipping
-Registering precompiled user dll's ...
-Registered in 0.000887 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Github\Roguelike\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.108 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 75.4 MB.
-System memory in use after: 75.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2275.
-Total: 3.410900 ms (FindLiveObjects: 0.438500 ms CreateObjectMapping: 0.120200 ms MarkObjects: 2.831200 ms  DeleteObjects: 0.019400 ms)
-
-========================================================================
-Received Prepare
-Reloading mono domain
-Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: D:/Unity Editors/2020.2.0b6/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001089 seconds.
-Symbol file LoadedFromMemory doesn't match image D:\Github\Roguelike\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 47.38 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.199 seconds
-Platform modules already initialized, skipping
-Registering precompiled user dll's ...
-Registered in 0.000888 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Github\Roguelike\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.121 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 75.3 MB.
-System memory in use after: 75.4 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2279.
-Total: 2.685600 ms (FindLiveObjects: 0.407700 ms CreateObjectMapping: 0.101200 ms MarkObjects: 2.155900 ms  DeleteObjects: 0.019500 ms)
+  Time since last request: 54.582938 seconds.
+  path: Assets/Sprites/charBackLeftSkeleton.png
+  artifactKey: Guid(8674a3b096b412a448229885e0d9d868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/charBackLeftSkeleton.png using Guid(8674a3b096b412a448229885e0d9d868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90763d766ed8b1c41354f27b80a17e98') in 0.053459 seconds
+  Import took 0.056628 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
