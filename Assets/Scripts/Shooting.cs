@@ -14,18 +14,23 @@ public class Shooting : MonoBehaviour
     public float AttackCooldown;
     public static int AttackMode = 1;
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetButton("Fire1"))
         {
-            if (AttackCooldown < 0)
-            {
-                Shoot();
-                AttackCooldown = AttackSpeed;
-            }
+                if (AttackCooldown <= 0)
+                {
+                    Shoot();
+                    AttackCooldown = AttackSpeed;
+                
+                }          
         }
-        AttackCooldown -= Time.deltaTime;
+
+            AttackCooldown -= Time.deltaTime;
+        if(AttackCooldown < 0)
+        {
+            AttackCooldown = 0.1f;
+        }
     }
 
     void Shoot()

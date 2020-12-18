@@ -8,7 +8,7 @@ public class AttackSpeedItem : MonoBehaviour
     {
         if (col.transform.tag == "Player")
         {
-            Shooting.AttackSpeed -= 0.05f;
+            Shooting.AttackSpeed -= 0.1f;
             Destroy(gameObject);
         }
     }

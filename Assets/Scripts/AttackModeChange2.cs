@@ -8,7 +8,7 @@ public class AttackModeChange2 : MonoBehaviour
     {
         if (col1.transform.tag == "Player")
         {
-            Shooting.AttackSpeed -= 0.3f; 
+            Shooting.AttackSpeed -= 0.2f; 
             Bullet.bulletLife = 0.3f;
             if (Bullet.bulletDamage - 15 > 0)
             {
