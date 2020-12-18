@@ -4,33 +4,54 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-
-    public int bulletDamage;
+    public int initialBulletDamage = 35;
+    public static int bulletDamage = 35;
     public GameObject hitEffect;
     public GameObject bulletPrefab;
+    public static float bulletLife = 0.6f;
+    public Rigidbody2D rb;
 
-    void OnCollisionStay2D(Collision2D collision)
+    void Start()
     {
-        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(effect, 1f);
-        Destroy(gameObject);
-    }
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(effect, 1f);
-        Destroy(gameObject);
-    }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        DamageCreature();
-        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(effect, 1f);
-        Destroy(gameObject);
+
+            Destroy(gameObject, bulletLife);
+
     }
 
-    void DamageCreature() 
+
+    void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("DamageCreature has been damaged");
+        if(collision.transform.tag == "Wall")
+        {
+            StartCoroutine(hitWall());
+        }
+        else if (collision.transform.tag != "Pad" && collision.transform.tag != "Bullet" && collision.transform.tag != "Player")
+        {
+            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
+            Destroy(gameObject);
+
+        }
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Wall")
+        {
+            StartCoroutine(hitWall());
+        } else if(collision.transform.tag != "Pad" && collision.transform.tag != "Bullet" && collision.transform.tag != "Player")
+        {
+                GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+                Destroy(effect, 1f);
+                Destroy(gameObject);
+    
+        }
+ }
+    IEnumerator hitWall()
+    {
+       yield return new WaitForSeconds(0.05f);
+        rb.velocity = new Vector3(0, 0, 0);
+
+    }
+
 }

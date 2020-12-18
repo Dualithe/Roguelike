@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Bat
   - SpawnPoint
+  - Bullet
+  - Wall
+  - Pad
   layers:
   - Default
   - TransparentFX

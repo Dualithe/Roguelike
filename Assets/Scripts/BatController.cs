@@ -10,18 +10,6 @@ using System;
 public class BatController : MonoBehaviour
 {
 
-
-
-
-
-
-
-
-
-
-
-
-
     //                                           Control the bat
     private Rigidbody2D batbody;
     public Vector2 playerPosition;
@@ -52,16 +40,9 @@ public class BatController : MonoBehaviour
 
         batbody.AddForce(batMovement * batSpeed);
     }
-    //                                       Damage the bat
-
-    private void OnCollisionEnter2D(Collision collision)
+    void OnTriggerEnter2D(Collider2D batCol)
     {
-        if (GameObject.FindWithTag("Bullet"))
-        {
-
-
-        }
-
+        batbody.AddForce((-batMovement * batSpeed)/3, ForceMode2D.Impulse);
     }
 
 }

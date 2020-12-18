@@ -19,9 +19,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if(invincibilityFrames <= 0)
         {      
-                TakeDamage();
-                invincibilityFrames = 1;        //1 seems to work fine but will be less if i decide to increase difficulty
-            FindObjectOfType<AudioManager>().Play("Hit");
+                TakeDamage(other);
         }
     }
 
@@ -35,10 +33,17 @@ public class PlayerHealth : MonoBehaviour
         invincibilityFrames = invincibilityFrames - Time.deltaTime;
     }
 
-    void TakeDamage()            //damage fuuuuuuuuuuug
+    void TakeDamage(Collider2D collision)            //damage fuuuuuuuuuuug
     {
-        currentHealth -= batDamage;
+        if (collision.transform.tag == "Bat") 
+        {
+            currentHealth -= batDamage;
 
-        healthBar.SetHealth(currentHealth);
+            healthBar.SetHealth(currentHealth);
+
+            invincibilityFrames = .2f;        //1 seems to work fine but will be less if i decide to increase difficulty
+
+            FindObjectOfType<AudioManager>().Play("Hit");
+        }
     }
 }

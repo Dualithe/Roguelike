@@ -7,30 +7,46 @@ public class Shooting : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-    public float AttackSpeed;
+    public GameObject bulletPrefab2;
+    public GameObject bulletPrefab3;
+    public static float AttackSpeed = 0.8f;
     public float bulletForce;
+    public float AttackCooldown;
+    public static int AttackMode = 1;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButton("Fire1"))
         {
-            if (AttackSpeed < 0)
+            if (AttackCooldown < 0)
             {
                 Shoot();
-                AttackSpeed = 0.5f;
+                AttackCooldown = AttackSpeed;
             }
         }
-        AttackSpeed = AttackSpeed - Time.deltaTime;
+        AttackCooldown -= Time.deltaTime;
     }
 
     void Shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
-      
+        if (AttackMode == 1)
+        {
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        }
+        if(AttackMode == 2)
+        {
+            GameObject bullet = Instantiate(bulletPrefab2, firePoint.position, firePoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce(firePoint.up * bulletForce * 2, ForceMode2D.Impulse);
+        }
+        if (AttackMode == 3)
+        {
+            GameObject bullet = Instantiate(bulletPrefab3, firePoint.position, firePoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce((firePoint.up * bulletForce)/2, ForceMode2D.Impulse);
+        }
     }
-
-
 }

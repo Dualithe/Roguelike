@@ -15,7 +15,6 @@ public class MovementControlls : MonoBehaviour
     private Vector3 dashing;
     private GameObject playerObj = null;
     public float dashSpeed;
-    private bool IsSpaceDown;
     public float dashCooldown = 0;
 
 
@@ -27,7 +26,7 @@ public class MovementControlls : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         //*****************************************************************************************************************//
         /*                                     MECHANIKA DASHA NIE RUSZAĆ BO SIĘ SYPNIE                                   */
@@ -42,13 +41,14 @@ public class MovementControlls : MonoBehaviour
 
         dashing = new Vector3(dashing.x / dashingVectorLength, dashing.y / dashingVectorLength, 0);                              //zapisujemy znormalizowany wektor w dashing                                                                             //sprawdzamy input
 
-        IsSpaceDown = Input.GetKeyDown("space");
+        //IsSpaceDown = Input.GetKeyDown("space");
 
-        if (IsSpaceDown == true)
+        if (Input.GetButtonUp("Jump"))
         {
             if (dashCooldown <= 0)
             {
-                 StartCoroutine(dash());
+                FindObjectOfType<AudioManager>().Play("Dash");
+                StartCoroutine(dash());
                 // rb.AddForce(dashing * dashSpeed);
                 // FindObjectOfType<AudioManager>().Play("Dash");
                 // dashCooldown = 1.5f;
@@ -59,10 +59,11 @@ public class MovementControlls : MonoBehaviour
         //*****************************************************************************************************************//
         /*                                     MECHANIKA DASHA NIE RUSZAĆ BO SIĘ SYPNIE                                   */
         //*****************************************************************************************************************//
+    }
+        private void FixedUpdate()
+        { 
 
-
-
-        if (IsSpaceDown == false)  //Dodatek do dasha, wyłącza movement podczas dasha aby nie było niepotrzebnych artefaktów
+        if (Input.GetButtonUp("Jump") == false)  //Dodatek do dasha, wyłącza movement podczas dasha aby nie było niepotrzebnych artefaktów
         {
             //               Player movement code              //
 
@@ -78,17 +79,19 @@ public class MovementControlls : MonoBehaviour
         Vector3 mouse = Camera.main.ScreenToWorldPoint(mouseScreen);
         transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(mouse.y - transform.position.y, mouse.x - transform.position.x) * Mathf.Rad2Deg - 90);
 
-    }
+        }
+    
     IEnumerator dash()
     {
+        Vector3 j = dashing;
 
-        rb.AddForce(dashing * dashSpeed);
-        FindObjectOfType<AudioManager>().Play("Dash");
+        for (int i = 10; i != 0; i--) 
+        {
+            rb.AddForce(j * dashSpeed);
+            yield return new WaitForSeconds(.01f);
 
-        for (int i = 10; i != 0; i--) {
-            yield return 0;
-            rb.AddForce(dashing * dashSpeed);
         }
+
         dashCooldown = 1f;
     }
 }
