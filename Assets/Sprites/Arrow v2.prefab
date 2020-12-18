@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d28e0cb514c82b40a13954ad820b6e4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a0cbaff7d731e64448958c97909379d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae86442774788c46979886f885cf8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialBulletDamage: 35
   hitEffect: {fileID: 5835094720396131782, guid: 3c852a89b33042440b462d6adf5feed3, type: 3}
   bulletPrefab: {fileID: 1751248937724218208}
   rb: {fileID: 120671873459151405}
