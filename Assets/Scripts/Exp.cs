@@ -6,6 +6,8 @@ using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
 using System;
+using Random = UnityEngine.Random;
+
 
 public class Exp : MonoBehaviour
 {
@@ -16,6 +18,7 @@ public class Exp : MonoBehaviour
     public float expMovementLength;
     public float expSpeed;
     public float squareExpRange;
+    public int RandomValue;
 
     // Start is called before the first frame update
     void Start()
@@ -47,11 +50,12 @@ public class Exp : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D ExpCollider)
     {
-        if (ExpCollider.transform.tag == "Player") 
+        if (ExpCollider.transform.tag == "Player")
         {
+            RandomValue = Random.Range(1, 14);
+            FindObjectOfType<AudioManager>().Play("xp" + RandomValue);
             Consumables.ExpAmmount++;
             Destroy(gameObject);
         }
-
     }
 }
