@@ -10,8 +10,8 @@ public class SlowGenerator : MonoBehaviour {
 	gridSpace[,] grid;
 	GameObject[,] gridObjects;
 	int roomHeight, roomWidth;
-	Vector2 roomSizeWorldUnits = new Vector2(35,35);
-	float worldUnitsInOneGridCell = 1;
+	Vector2 roomSizeWorldUnits = new Vector2(150,150);
+	float worldUnitsInOneGridCell = 5;
 	struct walker{
 		public Vector2 dir;
 		public Vector2 pos;

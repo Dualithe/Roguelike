@@ -10,6 +10,7 @@ TagManager:
   - Wall
   - Pad
   - Exp
+  - Floor
   layers:
   - Default
   - TransparentFX

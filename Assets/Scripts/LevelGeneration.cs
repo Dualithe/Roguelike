@@ -19,7 +19,7 @@ public class LevelGeneration : MonoBehaviour //Code of wbeaty of Six Dot Studios
 	float chanceWalkerChangeDir = 0.5f, chanceWalkerSpawn = 0.05f;
 	float chanceWalkerDestoy = 0.05f;
 	int maxWalkers = 10;
-	float percentToFill = 0.2f;
+	float percentToFill = 0.25f;
 	public GameObject wallObj, floorObj;
 
 	void Start()

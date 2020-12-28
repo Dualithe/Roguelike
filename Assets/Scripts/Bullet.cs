@@ -25,7 +25,7 @@ public class Bullet : MonoBehaviour
         {
             StartCoroutine(hitWall());
         }
-        else if (collision.transform.tag != "Pad" && collision.transform.tag != "Bullet" && collision.transform.tag != "Player" && collision.transform.tag != "Exp")
+        else if (collision.transform.tag != "Pad" && collision.transform.tag != "Bullet" && collision.transform.tag != "Player" && collision.transform.tag != "Exp" && collision.transform.tag != "Floor")
         {
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(effect, 1f);
@@ -39,7 +39,7 @@ public class Bullet : MonoBehaviour
         if (collision.transform.tag == "Wall")
         {
             StartCoroutine(hitWall());
-        } else if(collision.transform.tag != "Pad" && collision.transform.tag != "Bullet" && collision.transform.tag != "Player" && collision.transform.tag != "Exp")
+        } else if(collision.transform.tag != "Pad" && collision.transform.tag != "Bullet" && collision.transform.tag != "Player" && collision.transform.tag != "Exp" && collision.transform.tag != "Floor")
         {
                 GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
                 Destroy(effect, 1f);
