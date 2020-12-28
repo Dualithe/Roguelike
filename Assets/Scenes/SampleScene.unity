@@ -1026,13 +1026,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010346282}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f78a06c0421c8c84d9d9f505a9c3c192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallObj: {fileID: 1502750715140536, guid: 3447697fe54533c49ab73319aa05251d, type: 3}
-  floorObj: {fileID: 1652600507776870, guid: c5d555e5047fcd146a6c6b7c6edd8072, type: 3}
+  wallObj: {fileID: 24001791190353901, guid: b50b5ab8d415a214db17419dad0f1c21, type: 3}
+  floorObj: {fileID: 3038454988745587489, guid: b0d04d1814bdf6f458b50e38234a3b50, type: 3}
 --- !u!4 &1010346284
 Transform:
   m_ObjectHideFlags: 0
