@@ -55,7 +55,7 @@ public class PlayerSpawn : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D wallCol)
     {
-        if (!collidedObjects.Contains(wallCol.GetComponent<Collider>()) && wallCol.GetComponent<Collider>().tag == "Floor")
+        if (!collidedObjects.Contains(wallCol.GetComponent<Collider>()) && wallCol.GetComponent<Collider>().tag == "Wall")
         {
             collidedObjects.Add(wallCol.GetComponent<Collider>());
         }
