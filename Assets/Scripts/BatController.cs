@@ -27,7 +27,7 @@ public class BatController : MonoBehaviour
 
     void FixedUpdate()
     {
-        batPosition = GameObject.FindGameObjectWithTag("Bat").transform.position;
+        batPosition = this.gameObject.transform.position;
 
         playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
 
@@ -42,7 +42,11 @@ public class BatController : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D batCol)
     {
-        batbody.AddForce((-batMovement * batSpeed)/3, ForceMode2D.Impulse);
+        if (batCol.transform.tag == "Bullet" || batCol.transform.tag == "Player" || batCol.transform.tag == "Bat" || batCol.transform.tag == "Wall")
+        {
+
+            batbody.AddForce((-batMovement * batSpeed) / 3, ForceMode2D.Impulse);
+        }
     }
 
 }

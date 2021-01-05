@@ -16,7 +16,7 @@ public class LevelGeneration : MonoBehaviour //Code of wbeaty of Six Dot Studios
 		public Vector2 pos;
 	}
 	List<walker> walkers;
-	float chanceWalkerChangeDir = 0.5f, chanceWalkerSpawn = 0.05f;
+	float chanceWalkerChangeDir = 0.4f, chanceWalkerSpawn = 0.05f;
 	float chanceWalkerDestoy = 0.05f;
 	int maxWalkers = 10;
 	float percentToFill = 0.25f;
