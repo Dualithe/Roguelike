@@ -20,7 +20,8 @@ public class LevelGeneration : MonoBehaviour //Code of wbeaty of Six Dot Studios
 	float chanceWalkerDestoy = 0.05f;
 	int maxWalkers = 10;
 	float percentToFill = 0.25f;
-	public GameObject wallObj, floorObj;
+	public GameObject wallObj, floorObj, potentialSpawnpoint;
+	public int topFloor, bottomFloor, leftFloor, rightFloor;
 
 	void Start()
 	{
@@ -29,13 +30,14 @@ public class LevelGeneration : MonoBehaviour //Code of wbeaty of Six Dot Studios
 		CreateWalls();
 		RemoveSingleWalls();
 		SpawnLevel();
+		ScanMap();
 	}
 
 	void Setup()
 	{
 		//find grid size
-		roomHeight = Mathf.RoundToInt(roomSizeWorldUnits.x / worldUnitsInOneGridCell)*2;
-		roomWidth = Mathf.RoundToInt(roomSizeWorldUnits.y / worldUnitsInOneGridCell)*2;
+		roomHeight = Mathf.RoundToInt(roomSizeWorldUnits.x / worldUnitsInOneGridCell) * 2;
+		roomWidth = Mathf.RoundToInt(roomSizeWorldUnits.y / worldUnitsInOneGridCell) * 2;
 		//create grid
 		grid = new gridSpace[roomWidth, roomHeight];
 		//set grid's default state
@@ -258,5 +260,49 @@ public class LevelGeneration : MonoBehaviour //Code of wbeaty of Six Dot Studios
 		Vector2 spawnPos = new Vector2(x, y) * worldUnitsInOneGridCell - offset;
 		//spawn object
 		Instantiate(toSpawn, spawnPos, Quaternion.identity);
+	}
+	void ScanMap()
+	{
+		for (int x = 0; x < roomWidth - 1; x++)
+		{
+			for (int y = 0; y < roomHeight - 1; y++)
+			{
+				topFloor = 0;
+				bottomFloor = 0;
+				leftFloor = 0;
+				rightFloor = 0;
+
+				if (grid[x, y] == gridSpace.floor)
+				{
+					if (grid[x, y + 1] == gridSpace.floor)
+					{
+						topFloor = 1;
+					}
+					if (grid[x, y - 1] == gridSpace.floor)
+					{
+						bottomFloor = 1;
+					}
+					if (grid[x + 1, y] == gridSpace.floor)
+					{
+						rightFloor = 1;
+					}
+					if (grid[x - 1, y] == gridSpace.floor)
+					{
+						leftFloor = 1;
+					}
+					if (topFloor + bottomFloor + rightFloor + leftFloor == 1)  //zastapic tego ifa algorytmem liczacym korytarzowosc, np. 1 adjacentfloor i++ when 2/3/4 adjacent floors, stop pick random or highest value, the second highest is boss corridor;   
+					{
+
+						/*foreach(int tuple in spawnCoordinates)
+                        {
+							x = tuple.item1;
+							y = tuple.item2;
+                        }*/
+						Spawn(x, y, potentialSpawnpoint);
+					}
+
+				}
+			}
+		}
 	}
 }

@@ -11,6 +11,11 @@ TagManager:
   - Pad
   - Exp
   - Floor
+  - LevelGen
+  - AudioManager
+  - Camera
+  - Hud
+  - Ui
   layers:
   - Default
   - TransparentFX
