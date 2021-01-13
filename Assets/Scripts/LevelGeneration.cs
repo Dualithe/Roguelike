@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LevelGeneration : MonoBehaviour //Code of wbeaty of Six Dot Studios adapted for my game based on Nuclear Throne level generation
 {
-
 	enum gridSpace { empty, floor, wall };
 	gridSpace[,] grid;
 	int roomHeight, roomWidth;
@@ -22,13 +21,15 @@ public class LevelGeneration : MonoBehaviour //Code of wbeaty of Six Dot Studios
 	float percentToFill = 0.25f;
 	public GameObject wallObj, floorObj, potentialSpawnpoint;
 	public int topFloor, bottomFloor, leftFloor, rightFloor;
+	//public int[,] potentialSpawnPosition;
+	//public int[] SpawnImportance;
 
 	void Start()
 	{
 		Setup();
 		CreateFloors();
 		CreateWalls();
-		RemoveSingleWalls();
+		//RemoveSingleWalls();
 		SpawnLevel();
 		ScanMap();
 	}
@@ -263,6 +264,9 @@ public class LevelGeneration : MonoBehaviour //Code of wbeaty of Six Dot Studios
 	}
 	void ScanMap()
 	{
+		//potentialSpawnPosition = int[,];
+		//SpawnImportance = int[];
+
 		for (int x = 0; x < roomWidth - 1; x++)
 		{
 			for (int y = 0; y < roomHeight - 1; y++)
@@ -292,17 +296,19 @@ public class LevelGeneration : MonoBehaviour //Code of wbeaty of Six Dot Studios
 					}
 					if (topFloor + bottomFloor + rightFloor + leftFloor == 1)  //zastapic tego ifa algorytmem liczacym korytarzowosc, np. 1 adjacentfloor i++ when 2/3/4 adjacent floors, stop pick random or highest value, the second highest is boss corridor;   
 					{
-
-						/*foreach(int tuple in spawnCoordinates)
-                        {
-							x = tuple.item1;
-							y = tuple.item2;
-                        }*/
-						Spawn(x, y, potentialSpawnpoint);
+                     		Spawn(x, y, potentialSpawnpoint);
+						//potentialSpawnPosition.Add(x, y);
 					}
-
 				}
 			}
 		}
+		/*foreach (int value in potentialSpawnPosition)
+		{
+			SpawnImportance.Add(Math.Abs(x) * Math.Abs(y));
+
+		}
+		*/
+
+
 	}
 }
