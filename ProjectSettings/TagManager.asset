@@ -16,6 +16,9 @@ TagManager:
   - Camera
   - Hud
   - Ui
+  - Pad1
+  - Pad2
+  - Pad3
   layers:
   - Default
   - TransparentFX

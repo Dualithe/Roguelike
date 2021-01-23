@@ -101,8 +101,8 @@ MonoBehaviour:
   playerPosition: {x: 0, y: 0}
   expPosition: {x: 0, y: 0}
   expMovement: {x: 0, y: 0}
-  expMovementLength: 0
-  expSpeed: 30
+  expMovementAbsolute: 0
+  expSpeed: 15
   squareExpRange: 5
 --- !u!50 &5367492864722400402
 Rigidbody2D:

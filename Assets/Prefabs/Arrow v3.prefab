@@ -106,7 +106,6 @@ GameObject:
   - component: {fileID: 7468871438404074230}
   - component: {fileID: 8857293192520108483}
   - component: {fileID: 6777564999996119353}
-  - component: {fileID: 8390817616407860201}
   m_Layer: 1
   m_Name: Arrow v3
   m_TagString: Bullet
@@ -243,15 +242,3 @@ MonoBehaviour:
   hitEffect: {fileID: 4270949544151038958, guid: e4582ab071bfe8f4f8247dbfa650f50c, type: 3}
   bulletPrefab: {fileID: 9099482145971131323}
   rb: {fileID: 7468871438404074230}
---- !u!114 &8390817616407860201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9099482145971131323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2ec314b2a919fe40bc5c16b4d8c7aac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
