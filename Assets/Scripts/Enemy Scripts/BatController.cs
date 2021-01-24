@@ -16,13 +16,22 @@ public class BatController : MonoBehaviour
     private Vector2 batPosition;
     private Vector2 batMovementVector;
     private float batMovementLength;
+    private bool batAggro = false;
+    private float dashAbilityCooldownOperational;
+    [SerializeField] private float dashAbilityCooldown;
+    [SerializeField] private float dashAbilityForce;
+    [SerializeField] private float dashAbilityRange;
+    [SerializeField] private float batAggroRange;
     [SerializeField] private float batSpeed = 40;
     [SerializeField] public static int batDamage = 25;
 
 
+
     void Start()
     {
+        dashAbilityCooldownOperational = 0;
         batbody = GetComponent<Rigidbody2D>();
+        batAggro = false;
     }
 
     void FixedUpdate()
@@ -32,13 +41,29 @@ public class BatController : MonoBehaviour
         playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
 
 
-        batMovementVector = new Vector2 ((playerPosition.x - batPosition.x), (playerPosition.y - batPosition.y));
+        batMovementVector = new Vector2((playerPosition.x - batPosition.x), (playerPosition.y - batPosition.y));
 
         batMovementLength = (float)Math.Sqrt((batMovementVector.x * batMovementVector.x) + (batMovementVector.y * batMovementVector.y));
 
         batMovementVector = new Vector2(batMovementVector.x / batMovementLength, batMovementVector.y / batMovementLength);
 
-        batbody.AddForce(batMovementVector * batSpeed);
+        if (batMovementLength < batAggroRange)
+        {
+            batAggro = true;
+        }
+        if (batAggro == true && batMovementLength > dashAbilityRange - 2f)
+        {
+            batbody.AddForce(batMovementVector * batSpeed);
+        }
+        if (dashAbilityCooldownOperational <= 0) {
+            if (batMovementLength < dashAbilityRange)
+            {
+                batbody.AddForce(batMovementVector * batSpeed * dashAbilityForce);
+            }
+            dashAbilityCooldownOperational = dashAbilityCooldown;
+        }
+
+        dashAbilityCooldownOperational -= Time.deltaTime;
     }
 
 
@@ -56,6 +81,12 @@ public class BatController : MonoBehaviour
                     PlayerHealth.currentInvincibilityFrames = PlayerHealth.invincibilityFrames;        //.2 seems to work fine but will be less if i decide to increase difficulty
                     FindObjectOfType<AudioManager>().Play("Hit");
                 }
+                if (dashAbilityCooldownOperational > 0)
+                {
+                    batbody.AddForce(-batMovementVector * batSpeed * dashAbilityForce * 1.35f);
+                }
+
+
             }  
 
             batbody.AddForce((-batMovementVector * batSpeed) / 3, ForceMode2D.Impulse);

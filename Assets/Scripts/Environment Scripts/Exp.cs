@@ -39,7 +39,7 @@ public class Exp : MonoBehaviour
 
         expMovement = new Vector2(expMovement.x / expMovementAbsolute, expMovement.y / expMovementAbsolute);
 
-        if (expMovementAbsolute < squareExpRange) //you need to make this a circle instead of a square
+        if (expMovementAbsolute < squareExpRange) 
         {
             expbody.AddForce(expMovement * expSpeed);
         }

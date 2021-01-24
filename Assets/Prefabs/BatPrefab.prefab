@@ -119,11 +119,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 345d3f3671d51e440a51725dc5ff161a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPosition: {x: 0, y: 0}
-  batPosition: {x: 0, y: 0}
-  batMovement: {x: 0, y: 0}
-  batMovementLength: 0
-  batSpeed: 40
+  dashAbilityCooldown: 1.25
+  dashAbilityForce: 50
+  dashAbilityRange: 8
+  batAggroRange: 15
+  batSpeed: 50
 --- !u!50 &8018267925919800883
 Rigidbody2D:
   serializedVersion: 4
@@ -199,6 +199,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d10235075a4634c48b0f68f1b222dcdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxBatHealth: 100
-  BatHealth: 0
   damageEffect: {fileID: 2525118908144392856, guid: f3401e98776e85e41a95e4a778b6ae63, type: 3}
