@@ -21,8 +21,7 @@ public class LevelGeneration : MonoBehaviour //Code of wbeaty of Six Dot Studios
 	float percentToFill = 0.25f;
 	public GameObject wallObj, floorObj, potentialSpawnpoint;
 	public int topFloor, bottomFloor, leftFloor, rightFloor;
-	//public int[,] potentialSpawnPosition;
-	//public int[] SpawnImportance;
+	
 
 	void Start()
 	{
@@ -262,53 +261,46 @@ public class LevelGeneration : MonoBehaviour //Code of wbeaty of Six Dot Studios
 		//spawn object
 		Instantiate(toSpawn, spawnPos, Quaternion.identity);
 	}
-	void ScanMap()
-	{
-		//potentialSpawnPosition = int[,];
-		//SpawnImportance = int[];
+    void ScanMap()
+    {
 
-		for (int x = 0; x < roomWidth - 1; x++)
-		{
-			for (int y = 0; y < roomHeight - 1; y++)
-			{
-				topFloor = 0;
-				bottomFloor = 0;
-				leftFloor = 0;
-				rightFloor = 0;
+        for (int x = 0; x < roomWidth - 1; x++)
+        {
+            for (int y = 0; y < roomHeight - 1; y++)
+            {
+                topFloor = 0;
+                bottomFloor = 0;
+                leftFloor = 0;
+                rightFloor = 0;
 
-				if (grid[x, y] == gridSpace.floor)
-				{
-					if (grid[x, y + 1] == gridSpace.floor)
-					{
-						topFloor = 1;
-					}
-					if (grid[x, y - 1] == gridSpace.floor)
-					{
-						bottomFloor = 1;
-					}
-					if (grid[x + 1, y] == gridSpace.floor)
-					{
-						rightFloor = 1;
-					}
-					if (grid[x - 1, y] == gridSpace.floor)
-					{
-						leftFloor = 1;
-					}
-					if (topFloor + bottomFloor + rightFloor + leftFloor == 1)  //zastapic tego ifa algorytmem liczacym korytarzowosc, np. 1 adjacentfloor i++ when 2/3/4 adjacent floors, stop pick random or highest value, the second highest is boss corridor;   
-					{
-                     		Spawn(x, y, potentialSpawnpoint);
-						//potentialSpawnPosition.Add(x, y);
-					}
-				}
-			}
-		}
-		/*foreach (int value in potentialSpawnPosition)
-		{
-			SpawnImportance.Add(Math.Abs(x) * Math.Abs(y));
-
-		}
-		*/
+                if (grid[x, y] == gridSpace.floor)
+                {
+                    if (grid[x, y + 1] == gridSpace.floor)
+                    {
+                        topFloor = 1;
+                    }
+                    if (grid[x, y - 1] == gridSpace.floor)
+                    {
+                        bottomFloor = 1;
+                    }
+                    if (grid[x + 1, y] == gridSpace.floor)
+                    {
+                        rightFloor = 1;
+                    }
+                    if (grid[x - 1, y] == gridSpace.floor)
+                    {
+                        leftFloor = 1;
+                    }
+                    if (topFloor + bottomFloor + rightFloor + leftFloor == 1)  //zastapic tego ifa algorytmem liczacym korytarzowosc, np. 1 adjacentfloor i++ when 2/3/4 adjacent floors, stop pick random or highest value, the second highest is boss corridor;   
+                    {
+				
+                        Spawn(x, y, potentialSpawnpoint);
+                        
+                    }
 
 
+                }
+            }
+        }
 	}
 }

@@ -90,6 +90,10 @@ public class BatController : MonoBehaviour
             }  
 
             batbody.AddForce((-batMovementVector * batSpeed) / 3, ForceMode2D.Impulse);
+        if(batCol.transform.tag == "Bullet")
+            {
+                batAggro = true;
+            }
         }
     }
 

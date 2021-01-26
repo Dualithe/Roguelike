@@ -13,6 +13,6 @@ public class Consumables : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("" + ExpAmmount);
+            Debug.Log("" + ExpAmmount);
     }
 }

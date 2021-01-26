@@ -7,5 +7,19 @@ public class Skilltree : MonoBehaviour
   private void Awake()
     {
 
+
+
+
+
+
+
+
+
     }       
+
+
+
+
+
+
 }
