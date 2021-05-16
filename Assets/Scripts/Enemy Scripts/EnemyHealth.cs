@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    private int maxBatHealth = 100;            
+    private int maxBatHealth = 100;
     private int batHealth;
     private static int batDamage;
-    [SerializeField] private GameObject damageEffect;  //particles needed to be assigned in the inspector
+    [SerializeField] private GameObject damageEffect;
     private float InvFrames = 0;
 
-    void Start()
+    void Awake()
     {
         batHealth = maxBatHealth;
+        InvFrames = 0;
     }
 
     void Update()
     {
-        if(batHealth <= 0)
+        if (batHealth <= 0)
         {
             Destroy(gameObject);
         }
@@ -37,11 +38,11 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-     void DamageEnemy()
+    void DamageEnemy()
     {
-            batHealth -= batDamage;
-            GameObject effect = Instantiate(damageEffect, transform.position, Quaternion.identity);
-            Destroy(effect, 1.5f);
+        batHealth -= batDamage;
+        GameObject effect = Instantiate(damageEffect, transform.position, Quaternion.identity);
+        Destroy(effect, 1.5f);
     }
 
 }

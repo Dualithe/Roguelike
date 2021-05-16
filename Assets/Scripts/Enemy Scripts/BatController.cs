@@ -55,7 +55,8 @@ public class BatController : MonoBehaviour
         {
             batbody.AddForce(batMovementVector * batSpeed);
         }
-        if (dashAbilityCooldownOperational <= 0) {
+        if (dashAbilityCooldownOperational <= 0)
+        {
             if (batMovementLength < dashAbilityRange)
             {
                 batbody.AddForce(batMovementVector * batSpeed * dashAbilityForce);
@@ -87,10 +88,10 @@ public class BatController : MonoBehaviour
                 }
 
 
-            }  
+            }
 
             batbody.AddForce((-batMovementVector * batSpeed) / 3, ForceMode2D.Impulse);
-        if(batCol.transform.tag == "Bullet")
+            if (batCol.transform.tag == "Bullet")
             {
                 batAggro = true;
             }

@@ -1,0 +1,798 @@
+fileFormatVersion: 2
+guid: 71535265c48f4ed46a7054af6d86613b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1194841339106068185
+    second: Batsliced1_0
+  - first:
+      213: -100235455369981395
+    second: Batsliced1_1
+  - first:
+      213: 3681816448352625734
+    second: Batsliced1_2
+  - first:
+      213: -3325337092875739996
+    second: Batsliced1_3
+  - first:
+      213: -1650822485495637437
+    second: Batsliced1_4
+  - first:
+      213: 6348048580131973961
+    second: Batsliced1_5
+  - first:
+      213: 7576397688287437036
+    second: Batsliced1_6
+  - first:
+      213: -2880081924177306842
+    second: Batsliced1_7
+  - first:
+      213: 2419519373124149871
+    second: Batsliced1_8
+  - first:
+      213: 7138494566111060985
+    second: Batsliced1_9
+  - first:
+      213: 8479809721275150612
+    second: Batsliced1_10
+  - first:
+      213: 4140853106157529982
+    second: Batsliced1_11
+  - first:
+      213: 8912728911083413713
+    second: Batsliced1_12
+  - first:
+      213: -2813440523267810409
+    second: Batsliced1_13
+  - first:
+      213: 9172063906226879424
+    second: Batsliced1_14
+  - first:
+      213: 3674433966767826560
+    second: Batsliced1_15
+  - first:
+      213: -4555653790616953230
+    second: Batsliced1_16
+  - first:
+      213: -8087163196627709659
+    second: Batsliced1_17
+  - first:
+      213: 8873223942576317150
+    second: Batsliced1_18
+  - first:
+      213: 2486852857949020646
+    second: Batsliced1_19
+  - first:
+      213: 6199411390702043437
+    second: Batsliced1_20
+  - first:
+      213: 1745791700542978570
+    second: Batsliced1_21
+  - first:
+      213: -6762330242278232088
+    second: Batsliced1_22
+  - first:
+      213: -2592077367622655795
+    second: Batsliced1_23
+  - first:
+      213: -8052167396890360267
+    second: Batsliced1_24
+  - first:
+      213: -7634509075355589314
+    second: Batsliced1_25
+  - first:
+      213: -3675849106707767147
+    second: Batsliced1_26
+  - first:
+      213: -6533538488399498711
+    second: Batsliced1_27
+  - first:
+      213: -5749199616178783123
+    second: Batsliced1_28
+  - first:
+      213: -5305200221277612813
+    second: Batsliced1_29
+  - first:
+      213: 6599825568265438834
+    second: Batsliced1_30
+  - first:
+      213: -599618926007112245
+    second: Batsliced1_31
+  - first:
+      213: -7075957359610883174
+    second: Batsliced1_32
+  - first:
+      213: -2226563986478934748
+    second: Batsliced1_33
+  - first:
+      213: 3573108177915611458
+    second: Batsliced1_34
+  - first:
+      213: 4444947210849998817
+    second: Batsliced1_35
+  - first:
+      213: -4781340065912711907
+    second: Batsliced1_36
+  - first:
+      213: -9089677131278203878
+    second: Batsliced1_37
+  - first:
+      213: -283331013776159335
+    second: Batsliced1_38
+  - first:
+      213: -7742981539968510742
+    second: Batsliced1_39
+  - first:
+      213: 7066253643335742611
+    second: Batsliced1_40
+  - first:
+      213: -8001142964501715165
+    second: Batsliced1_41
+  - first:
+      213: -8067547065426797007
+    second: Batsliced1_42
+  - first:
+      213: -3853917064896074634
+    second: Batsliced1_43
+  - first:
+      213: 8605486288641652565
+    second: Batsliced1_44
+  - first:
+      213: 9177339644207723693
+    second: Batsliced1_45
+  - first:
+      213: -2868671375779078041
+    second: Batsliced1_46
+  - first:
+      213: 8467240139284793353
+    second: Batsliced1_47
+  - first:
+      213: 5927981597015577465
+    second: Batsliced1_48
+  - first:
+      213: -1790153723686305671
+    second: Batsliced1_49
+  - first:
+      213: -5997223427779248236
+    second: Batsliced1_50
+  - first:
+      213: -3961631875037199630
+    second: Batsliced1_51
+  - first:
+      213: -6074646875081780060
+    second: Batsliced1_52
+  - first:
+      213: 2519274557754631740
+    second: Batsliced1_53
+  - first:
+      213: -1495129847864842111
+    second: Batsliced1_54
+  - first:
+      213: 4775865876241719373
+    second: Batsliced1_55
+  - first:
+      213: -1757432179629955102
+    second: Batsliced1_56
+  - first:
+      213: 2100616771351013454
+    second: Batsliced1_57
+  - first:
+      213: -1719893075428135303
+    second: Batsliced1_58
+  - first:
+      213: -3089855466148435841
+    second: Batsliced1_59
+  - first:
+      213: -1642886064153444645
+    second: Batsliced1_60
+  - first:
+      213: -4436821273771309107
+    second: Batsliced1_61
+  - first:
+      213: 8363324508450235802
+    second: Batsliced1_62
+  - first:
+      213: -5238934341441147217
+    second: Batsliced1_63
+  - first:
+      213: -1019238341431051513
+    second: Batsliced1_64
+  - first:
+      213: 5446846969321866573
+    second: Batsliced1_65
+  - first:
+      213: 6984508317787345024
+    second: Batsliced1_66
+  - first:
+      213: -7261847071835729147
+    second: Batsliced1_67
+  - first:
+      213: 7329041273984810166
+    second: Batsliced1_68
+  - first:
+      213: -2132729786158365970
+    second: Batsliced1_69
+  - first:
+      213: -5668509330958096769
+    second: Batsliced1_70
+  - first:
+      213: -7240213933250326372
+    second: Batsliced1_71
+  - first:
+      213: -9213045296651994175
+    second: Batsliced1_72
+  - first:
+      213: 6793045363418749819
+    second: Batsliced1_73
+  - first:
+      213: -3281298640812456120
+    second: Batsliced1_74
+  - first:
+      213: 6564389413526378746
+    second: Batsliced1_75
+  - first:
+      213: 3951961655068514897
+    second: Batsliced1_76
+  - first:
+      213: -1698429063267632730
+    second: Batsliced1_77
+  - first:
+      213: -1596325262277529257
+    second: Batsliced1_78
+  - first:
+      213: -4180732747196345250
+    second: Batsliced1_79
+  - first:
+      213: 4661897014577362120
+    second: Batsliced1_80
+  - first:
+      213: 1168940854884911844
+    second: Batsliced1_81
+  - first:
+      213: 4689283131260170598
+    second: Batsliced1_82
+  - first:
+      213: -6731592802058940773
+    second: Batsliced1_83
+  - first:
+      213: 7638945027473604433
+    second: Batsliced1_84
+  - first:
+      213: -5195577273308835573
+    second: Batsliced1_85
+  - first:
+      213: -3600464757399716775
+    second: Batsliced1_86
+  - first:
+      213: 458902560100474442
+    second: Batsliced1_87
+  - first:
+      213: -6421538770571303581
+    second: Batsliced1_88
+  - first:
+      213: 6000364750394106546
+    second: Batsliced1_89
+  - first:
+      213: 2262232417043276570
+    second: Batsliced1_90
+  - first:
+      213: -3729742971785043894
+    second: Batsliced1_91
+  - first:
+      213: 1913149395781473258
+    second: Batsliced1_92
+  - first:
+      213: -1015248542456662408
+    second: Batsliced1_93
+  - first:
+      213: 654918176301010475
+    second: Batsliced1_94
+  - first:
+      213: 2554297712173334871
+    second: Batsliced1_95
+  - first:
+      213: 5527009091805197137
+    second: Batsliced1_96
+  - first:
+      213: -5914395769828643783
+    second: Batsliced1_97
+  - first:
+      213: -3379092532422659665
+    second: Batsliced1_98
+  - first:
+      213: -5168951483220328323
+    second: Batsliced1_99
+  - first:
+      213: -7064073785026066303
+    second: Batsliced1_100
+  - first:
+      213: 3238311990239573239
+    second: Batsliced1_101
+  - first:
+      213: 3146243915336145550
+    second: Batsliced1_102
+  - first:
+      213: -1914378780005040499
+    second: Batsliced1_103
+  - first:
+      213: -3602010530633536947
+    second: Batsliced1_104
+  - first:
+      213: -4620895131134516945
+    second: Batsliced1_105
+  - first:
+      213: -9213956237981846476
+    second: Batsliced1_106
+  - first:
+      213: 7459308143650240045
+    second: Batsliced1_107
+  - first:
+      213: 3572781212875494812
+    second: Batsliced1_108
+  - first:
+      213: -7894106941209291784
+    second: Batsliced1_109
+  - first:
+      213: -2873894397791832098
+    second: Batsliced1_110
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Batsliced1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d68e5c0edde49010800000000000000
+      internalID: 1194841339106068185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 510
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22d5c86264eb9ef0800000000000000
+      internalID: -100235455369981395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 476
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644af3c7d80781330800000000000000
+      internalID: 3681816448352625734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 442
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac16bc48870ad1d0800000000000000
+      internalID: -3325337092875739996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a1ec422b91719e0800000000000000
+      internalID: -1650822485495637437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 374
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b60bbdc8cc81850800000000000000
+      internalID: 6348048580131973961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0a6775e85c42960800000000000000
+      internalID: 7576397688287437036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b5361dfb4e708d0800000000000000
+      internalID: -2880081924177306842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62ad3afc0cd39120800000000000000
+      internalID: 2419519373124149871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 238
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f32b1c8cf6011360800000000000000
+      internalID: 7138494566111060985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411728773065ea570800000000000000
+      internalID: 8479809721275150612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ba79bf5f3477930800000000000000
+      internalID: 4140853106157529982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d02b7419bf50bb70800000000000000
+      internalID: 8912728911083413713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79bdee510c6a4f8d0800000000000000
+      internalID: -2813440523267810409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbb5dbe687b94f70800000000000000
+      internalID: 9172063906226879424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08663db89363ef230800000000000000
+      internalID: 3674433966767826560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batsliced1_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e5d9aa30117c0c0800000000000000
+      internalID: -4555653790616953230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
